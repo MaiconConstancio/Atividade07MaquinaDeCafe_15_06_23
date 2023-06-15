@@ -140,7 +140,7 @@ namespace Atividade07MaquinaDeCafe
             Console.WriteLine($"Ultimo usuario tem R${novoVapCash}, de saldo para a proxima compra.\n");
             
             Main(null);
-            //return;
+            return;
 
             Console.ReadKey();
 
