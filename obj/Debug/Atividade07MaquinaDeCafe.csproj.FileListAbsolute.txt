@@ -1,0 +1,8 @@
+C:\Users\MK\source\repos\Atividade07MaquinaDeCafe\Atividade07MaquinaDeCafe\bin\Debug\Atividade07MaquinaDeCafe.exe.config
+C:\Users\MK\source\repos\Atividade07MaquinaDeCafe\Atividade07MaquinaDeCafe\bin\Debug\Atividade07MaquinaDeCafe.exe
+C:\Users\MK\source\repos\Atividade07MaquinaDeCafe\Atividade07MaquinaDeCafe\bin\Debug\Atividade07MaquinaDeCafe.pdb
+C:\Users\MK\source\repos\Atividade07MaquinaDeCafe\Atividade07MaquinaDeCafe\obj\Debug\Atividade07MaquinaDeCafe.csproj.AssemblyReference.cache
+C:\Users\MK\source\repos\Atividade07MaquinaDeCafe\Atividade07MaquinaDeCafe\obj\Debug\Atividade07MaquinaDeCafe.csproj.SuggestedBindingRedirects.cache
+C:\Users\MK\source\repos\Atividade07MaquinaDeCafe\Atividade07MaquinaDeCafe\obj\Debug\Atividade07MaquinaDeCafe.csproj.CoreCompileInputs.cache
+C:\Users\MK\source\repos\Atividade07MaquinaDeCafe\Atividade07MaquinaDeCafe\obj\Debug\Atividade07MaquinaDeCafe.exe
+C:\Users\MK\source\repos\Atividade07MaquinaDeCafe\Atividade07MaquinaDeCafe\obj\Debug\Atividade07MaquinaDeCafe.pdb
