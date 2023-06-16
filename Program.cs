@@ -9,12 +9,12 @@ namespace Atividade07MaquinaDeCafe
 {
     internal class Program
     {
+        static double novoVapCash;
         static void Main(string[] args)
         {
 
             string nomeDaEmpresa = "MK VACAP";
             double vapCash = 0;
-            double novoVapCash = 0;
             string confirmaçãoDoDinheiro = "";
 
             //---------- ALTERAR VALOR E OPÇOES DO CARDAPIO AQUI ----------------
@@ -46,8 +46,12 @@ namespace Atividade07MaquinaDeCafe
 
             string ERRORsaldo = ("Saldo insuficiente, por favor, recarregue e tente novamente!\n" +
                 "        -------------------------------\n\n");
+            //------------------------------------------------------------------------
 
-
+            if (novoVapCash > 0)
+            {
+                Console.WriteLine($"Saldo restante {vapCash + novoVapCash}\n");
+            }
 
             Console.WriteLine($"Olá seja Bem-vindo ao sistema {nomeDaEmpresa}");
             Console.WriteLine("Nosso sistema usa o mais novo e avançado VACAP CASH, que consiste em " +
@@ -58,7 +62,7 @@ namespace Atividade07MaquinaDeCafe
             Console.WriteLine("Então vamos lá? Qual o valor você gostaria de aplicar?");
             vapCash = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Valor total: " + vapCash + " reais.");
+            Console.WriteLine($"Valor total: {vapCash + novoVapCash} reais.");
             Console.WriteLine("O valor aplicado está correto?");
             Console.WriteLine("Dirite 'Sim' ou 'Não'");
             confirmaçãoDoDinheiro = Console.ReadLine();
@@ -68,7 +72,7 @@ namespace Atividade07MaquinaDeCafe
             if (confirmaçãoDoDinheiro == "SIM" || confirmaçãoDoDinheiro == "sim" || confirmaçãoDoDinheiro == "Sim" 
                 || confirmaçãoDoDinheiro == "SIm" || confirmaçãoDoDinheiro == "sIM" || confirmaçãoDoDinheiro == "s")
             {
-                Console.WriteLine($"Ótimo! valor de {vapCash} reais, confirmado com sucesso!");
+                Console.WriteLine($"Ótimo! valor de {vapCash + novoVapCash} reais, confirmado com sucesso!");
                 Console.WriteLine("        -------------------------------\n\n");
             }
                     else if (confirmaçãoDoDinheiro == "NÃO" || confirmaçãoDoDinheiro == "NAO" || confirmaçãoDoDinheiro == "Não"
@@ -127,7 +131,7 @@ namespace Atividade07MaquinaDeCafe
             // -------------------------- SOBRA DO DINHEIRO DEPOIS DA ESCOLHA DE CAFÉ ------------------------
             if (novoVapCash >= 0)
             {
-                Console.WriteLine($"Saldo atual {novoVapCash} reais, seu pedido sera realizado!");
+                Console.WriteLine($"Saldo atual {vapCash + novoVapCash} reais, seu pedido sera realizado!");
             }
             else
             {
@@ -137,7 +141,6 @@ namespace Atividade07MaquinaDeCafe
             }
             Console.WriteLine("Sistema encerrado, vamos para o proximo pedido\n" +
                 "        -------------------------------\n\n");
-            Console.WriteLine($"Ultimo usuario tem R${novoVapCash}, de saldo para a proxima compra.\n");
             
             Main(null);
             return;
