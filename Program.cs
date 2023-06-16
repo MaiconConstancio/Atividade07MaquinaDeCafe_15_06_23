@@ -10,6 +10,7 @@ namespace Atividade07MaquinaDeCafe
     internal class Program
     {
         static double novoVapCash;
+
         static void Main(string[] args)
         {
 
